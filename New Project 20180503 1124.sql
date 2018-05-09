@@ -130,7 +130,7 @@ CREATE TABLE `admin_user` (
 
 /*!40000 ALTER TABLE `admin_user` DISABLE KEYS */;
 INSERT INTO `admin_user` (`user_id`,`firstname`,`lastname`,`email`,`username`,`password`,`created`,`modified`,`logdate`,`lognum`,`reload_acl_flag`,`is_active`,`extra`,`rp_token`,`rp_token_created_at`) VALUES 
- (1,'Joseph','Aguilar','jda_joseph@outlook.com','admin','b193ade165db3166eaff19f10b8e9fa2:zZ7GMrQJPnXa6rWNr2F7yAUhSmtSfZK8','2018-05-02 05:53:25','2018-05-02 05:53:25','2018-05-02 05:53:46',1,0,1,'a:1:{s:11:\"configState\";a:26:{s:15:\"payment_account\";s:1:\"1\";s:32:\"payment_paypal_payment_solutions\";s:1:\"1\";s:19:\"payment_wps_express\";s:1:\"0\";s:37:\"payment_wps_express_checkout_required\";s:1:\"1\";s:54:\"payment_wps_express_checkout_required_express_checkout\";s:1:\"1\";s:28:\"payment_settings_wps_express\";s:1:\"1\";s:37:\"payment_settings_wps_express_advanced\";s:1:\"0\";s:37:\"payment_wps_express_billing_agreement\";s:1:\"0\";s:37:\"payment_wps_express_settlement_report\";s:1:\"0\";s:28:\"payment_wps_express_frontend\";s:1:\"0\";s:24:\"payment_express_checkout\";s:1:\"0\";s:33:\"payment_express_checkout_required\";s:1:\"1\";s:50:\"payment_express_checkout_required_express_checkout\";s:1:\"1\";s:19:\"payment_settings_ec\";s:1:\"1\";s:28:\"payment_settings_ec_advanced\";s:1:\"0\";s:42:\"payment_express_checkout_billing_agreement\";s:1:\"0\";s:42:\"payment_express_checkout_settlement_report\";s:1:\"0\";s:33:\"payment_express_checkout_frontend\";s:1:\"0\";s:14:\"payment_ccsave\";s:1:\"0\";s:15:\"payment_checkmo\";s:1:\"0\";s:12:\"payment_free\";s:1:\"0\";s:20:\"payment_banktransfer\";s:1:\"0\";s:22:\"payment_cashondelivery\";s:1:\"0\";s:21:\"payment_purchaseorder\";s:1:\"0\";s:20:\"payment_authorizenet\";s:1:\"0\";s:31:\"payment_authorizenet_directpost\";s:1:\"0\";}}',NULL,NULL);
+ (1,'Joseph','Aguilar','jda_joseph@outlook.com','admin','6caf0fe57ea8e20fe70ba99a85c20a4e','2018-05-02 05:53:25','2018-05-02 05:53:25','2018-05-09 02:21:51',2,0,1,'a:1:{s:11:\"configState\";a:26:{s:15:\"payment_account\";s:1:\"1\";s:32:\"payment_paypal_payment_solutions\";s:1:\"1\";s:19:\"payment_wps_express\";s:1:\"0\";s:37:\"payment_wps_express_checkout_required\";s:1:\"1\";s:54:\"payment_wps_express_checkout_required_express_checkout\";s:1:\"1\";s:28:\"payment_settings_wps_express\";s:1:\"1\";s:37:\"payment_settings_wps_express_advanced\";s:1:\"0\";s:37:\"payment_wps_express_billing_agreement\";s:1:\"0\";s:37:\"payment_wps_express_settlement_report\";s:1:\"0\";s:28:\"payment_wps_express_frontend\";s:1:\"0\";s:24:\"payment_express_checkout\";s:1:\"0\";s:33:\"payment_express_checkout_required\";s:1:\"1\";s:50:\"payment_express_checkout_required_express_checkout\";s:1:\"1\";s:19:\"payment_settings_ec\";s:1:\"1\";s:28:\"payment_settings_ec_advanced\";s:1:\"0\";s:42:\"payment_express_checkout_billing_agreement\";s:1:\"0\";s:42:\"payment_express_checkout_settlement_report\";s:1:\"0\";s:33:\"payment_express_checkout_frontend\";s:1:\"0\";s:14:\"payment_ccsave\";s:1:\"0\";s:15:\"payment_checkmo\";s:1:\"0\";s:12:\"payment_free\";s:1:\"0\";s:20:\"payment_banktransfer\";s:1:\"0\";s:22:\"payment_cashondelivery\";s:1:\"0\";s:21:\"payment_purchaseorder\";s:1:\"0\";s:20:\"payment_authorizenet\";s:1:\"0\";s:31:\"payment_authorizenet_directpost\";s:1:\"0\";}}',NULL,NULL);
 /*!40000 ALTER TABLE `admin_user` ENABLE KEYS */;
 
 
@@ -152,7 +152,7 @@ CREATE TABLE `adminnotification_inbox` (
   KEY `IDX_ADMINNOTIFICATION_INBOX_SEVERITY` (`severity`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_READ` (`is_read`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_REMOVE` (`is_remove`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox';
 
 --
 -- Dumping data for table `adminnotification_inbox`
@@ -161,7 +161,8 @@ CREATE TABLE `adminnotification_inbox` (
 /*!40000 ALTER TABLE `adminnotification_inbox` DISABLE KEYS */;
 INSERT INTO `adminnotification_inbox` (`notification_id`,`severity`,`date_added`,`title`,`description`,`url`,`is_read`,`is_remove`) VALUES 
  (1,1,'2018-02-27 19:45:55','Magento Open Source 1.9.3.8 and SUPEE-10570 Enhance Security and Functionality – 2/27/2018','Magento Open Source 1.9.3.8 and the SUPEE-10570 patch include critical security enhancements and feature updates, including support for recent USPS API changes. Review the release notes for more information: http://devdocs.magento.com/guides/m1x/ce19-ee114/ce1.9_release-notes.html ','http://devdocs.magento.com/guides/m1x/ce19-ee114/ce1.9_release-notes.html',0,0),
- (2,1,'2018-04-09 05:03:15','Take Steps to Protect Your Site ','Our goal is to help you deliver the highest level of security to your Magento site. \n\nYou now have access to a security scan tool that enables you to regularly monitor your sites and receive updates regarding known security risks, malware, and unauthorized access. It provides over 30 security tests to identify potential vulnerabilities, such as missing Magento patches, configuration issues, and failure to follow security best practices. Please be sure to set your site up for security scanning – activation is quick and easy. Access today in your Magento account.\n\nYou should also visit our Security Center which provides alerts around potential issues as well as best practices to help you protect your site against issues, such as brute force attacks. Brute-force password guessing attacks continue to target Magento Open Source (formerly Community Edition) sites worldwide and we have published an  article that explains multiple actions you can take to protect your site from such attacks. In some cases, these attacks have resulted in unauthorized administrative access, so it is important to implement these recommendations.\n\nTo visit the Magento Security Center:\nwww.magento.com/security\n\nTo view steps you can take to protect against issues like brute force, go to:\nwww.magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks\n','https://magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks',0,0);
+ (2,1,'2018-04-09 05:03:15','Take Steps to Protect Your Site ','Our goal is to help you deliver the highest level of security to your Magento site. \n\nYou now have access to a security scan tool that enables you to regularly monitor your sites and receive updates regarding known security risks, malware, and unauthorized access. It provides over 30 security tests to identify potential vulnerabilities, such as missing Magento patches, configuration issues, and failure to follow security best practices. Please be sure to set your site up for security scanning – activation is quick and easy. Access today in your Magento account.\n\nYou should also visit our Security Center which provides alerts around potential issues as well as best practices to help you protect your site against issues, such as brute force attacks. Brute-force password guessing attacks continue to target Magento Open Source (formerly Community Edition) sites worldwide and we have published an  article that explains multiple actions you can take to protect your site from such attacks. In some cases, these attacks have resulted in unauthorized administrative access, so it is important to implement these recommendations.\n\nTo visit the Magento Security Center:\nwww.magento.com/security\n\nTo view steps you can take to protect against issues like brute force, go to:\nwww.magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks\n','https://magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks',0,0),
+ (3,4,'2018-05-02 21:07:01','Magento Open Source 2.2.4 Enables Better Shopping Experiences with Integrated Payment, Tax, and Shipping Solutions – 5/2/2018','The latest release of Magento Open Source empowers merchants to create better shopping experiences with performance enhancements and integrations with Amazon Pay, Klarna, and Vertex. Learn how these features can help you reduce cart abandonment and increase average order value, while simplifying your operations at https://magento.com/blog/magento-news/create-better-shopping-experiences-magento-commerce','https://magento.com/blog/magento-news/create-better-shopping-experiences-magento-commerce',0,0);
 /*!40000 ALTER TABLE `adminnotification_inbox` ENABLE KEYS */;
 
 
@@ -7744,7 +7745,7 @@ CREATE TABLE `log_visitor` (
   `last_url_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Last URL ID',
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`visitor_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table';
 
 --
 -- Dumping data for table `log_visitor`
@@ -7752,7 +7753,9 @@ CREATE TABLE `log_visitor` (
 
 /*!40000 ALTER TABLE `log_visitor` DISABLE KEYS */;
 INSERT INTO `log_visitor` (`visitor_id`,`session_id`,`first_visit_at`,`last_visit_at`,`last_url_id`,`store_id`) VALUES 
- (1,'228n8sad7hhknfcss5288aj1j0','2018-05-02 05:53:32','2018-05-02 05:53:36',0,1);
+ (1,'228n8sad7hhknfcss5288aj1j0','2018-05-02 05:53:32','2018-05-02 05:53:36',0,1),
+ (2,'sn4c9ug0t3j07q3ostvb9i9lc4','2018-05-04 00:37:23','2018-05-04 00:38:57',0,1),
+ (3,'ecmk8hc1rdkj98ragnajfaau21','2018-05-09 00:39:53','2018-05-09 02:04:57',0,1);
 /*!40000 ALTER TABLE `log_visitor` ENABLE KEYS */;
 
 
@@ -7778,7 +7781,9 @@ CREATE TABLE `log_visitor_info` (
 
 /*!40000 ALTER TABLE `log_visitor_info` DISABLE KEYS */;
 INSERT INTO `log_visitor_info` (`visitor_id`,`http_referer`,`http_user_agent`,`http_accept_charset`,`http_accept_language`,`server_addr`,`remote_addr`) VALUES 
- (1,'http://127.0.0.1/magento/index.php/install/wizard/end/','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',NULL,'en-US,en;q=0.9',0x7F000001,0x7F000001);
+ (1,'http://127.0.0.1/magento/index.php/install/wizard/end/','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',NULL,'en-US,en;q=0.9',0x7F000001,0x7F000001),
+ (2,NULL,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',NULL,'en-US,en;q=0.9',0x7F000001,0x7F000001),
+ (3,NULL,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',NULL,'en-US,en;q=0.9',0x7F000001,0x7F000001);
 /*!40000 ALTER TABLE `log_visitor_info` ENABLE KEYS */;
 
 
@@ -8280,7 +8285,7 @@ CREATE TABLE `poll` (
 
 /*!40000 ALTER TABLE `poll` DISABLE KEYS */;
 INSERT INTO `poll` (`poll_id`,`poll_title`,`votes_count`,`store_id`,`date_posted`,`date_closed`,`active`,`closed`,`answers_display`) VALUES 
- (1,'What is your favorite color',7,0,'2018-05-02 05:50:34',NULL,1,0,NULL);
+ (1,'What is your favorite color',8,0,'2018-05-02 05:50:34',NULL,1,0,NULL);
 /*!40000 ALTER TABLE `poll` ENABLE KEYS */;
 
 
@@ -8308,7 +8313,7 @@ CREATE TABLE `poll_answer` (
 INSERT INTO `poll_answer` (`answer_id`,`poll_id`,`answer_title`,`votes_count`,`answer_order`) VALUES 
  (1,1,'Green',4,0),
  (2,1,'Red',1,0),
- (3,1,'Black',0,0),
+ (3,1,'Black',1,0),
  (4,1,'Magenta',2,0);
 /*!40000 ALTER TABLE `poll_answer` ENABLE KEYS */;
 
@@ -8352,13 +8357,15 @@ CREATE TABLE `poll_vote` (
   PRIMARY KEY (`vote_id`),
   KEY `IDX_POLL_VOTE_POLL_ANSWER_ID` (`poll_answer_id`),
   CONSTRAINT `FK_POLL_VOTE_POLL_ANSWER_ID_POLL_ANSWER_ANSWER_ID` FOREIGN KEY (`poll_answer_id`) REFERENCES `poll_answer` (`answer_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Poll Vote';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='Poll Vote';
 
 --
 -- Dumping data for table `poll_vote`
 --
 
 /*!40000 ALTER TABLE `poll_vote` DISABLE KEYS */;
+INSERT INTO `poll_vote` (`vote_id`,`poll_id`,`poll_answer_id`,`ip_address`,`customer_id`,`vote_time`) VALUES 
+ (1,1,3,0x7F000001,NULL,'2018-05-04 00:38:04');
 /*!40000 ALTER TABLE `poll_vote` ENABLE KEYS */;
 
 
